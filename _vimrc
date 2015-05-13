@@ -83,4 +83,11 @@ autocmd FileType python let b:did_ftplugin = 1
 
 "vim-indent-guides関連
 let g:indent_guides_enable_on_vim_startup=1 "vim起動時に有効にする
+let g:indent_guides_guide_size=1
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=110
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=140
 
+
+"コマンド定義
+command! Todo edit ~\ToDo.txt   ":TodoでTodo.txtを編集
