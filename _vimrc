@@ -20,6 +20,7 @@ NeoBundleFetch 'Shogo/neobundle.vim'
 "ここからプラグイン名を書いていく
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'glidenote/memolist.vim'
