@@ -88,6 +88,16 @@ let g:indent_guides_auto_colors=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=110
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=140
 
+"unite関連
+nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 
 "コマンド定義
 command! Todo edit ~\ToDo.txt   ":TodoでTodo.txtを編集
+
+
+"Todo
+"Uniteまわりを変更する
+"衝突しないようなキーバインドにする
+"現在マッピングされているキーバインドを調べるコマンドを調べる
+"
+"
