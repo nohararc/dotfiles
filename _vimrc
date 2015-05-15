@@ -69,12 +69,12 @@ set matchtime=1 "対応する括弧を強調する時間(0.x秒単位)
 set textwidth=0 "自動改行無効
 
 "vimshell関連
-let g:vimshell_prompt_expr = 'getcwd()." > "'
-let g:vimshell_prompt_pattern = '^\f\+ > '
+let g:vimshell_prompt_expr = 'getcwd()." > "'   "カレントディレクトリを表示
 
 "vimfiler関連
 let g:vimfiler_enable_auto_cd = 1
 let g:vimfiler_safe_mode_by_default = 0
+nnoremap <silent> ,vf :<C-u>VimFiler<CR>
 
 "jedi-vim関連
 let g:jedi#auto_initialization = 1
