@@ -67,6 +67,7 @@ set wrapscan    "検索時に最後まで戻ったら
 set showmatch   "閉じ括弧が入力されたときに対応する括弧を強調する
 set matchtime=1 "対応する括弧を強調する時間(0.x秒単位)
 set textwidth=0 "自動改行無効
+set cursorline  "現在編集中の行を強調表示
 
 "vimshell関連
 let g:vimshell_prompt_expr = 'getcwd()." > "'   "カレントディレクトリを表示
