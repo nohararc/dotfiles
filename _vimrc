@@ -92,6 +92,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=140
 "unite関連
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uf :<C-u>Unite neomru/file<CR>
+nnoremap <silent> ,ut :<C-u>Unite tab<CR>
 
 "コマンド定義
 command! Todo edit ~\ToDo.txt   ":TodoでTodo.txtを編集
