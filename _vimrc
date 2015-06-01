@@ -40,6 +40,9 @@ set ruler	"カーソル位置を表示
 set autoindent	"自動でインデント
 set smartindent	"新しい行を開始したときにインデントを同じにする
 
+set list
+set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
+
 "backspaceキーの挙動設定
     "indent	行頭の空白の削除を許す
     "eol	改行の削除を許す
@@ -70,7 +73,7 @@ set textwidth=0 "自動改行無効
 set cursorline  "現在編集中の行を強調表示
 
 "vimshell関連
-let g:vimshell_prompt_expr = 'getcwd()." > "'   "カレントディレクトリを表示
+"let g:vimshell_prompt_expr = 'getcwd()." > "'   "カレントディレクトリを表示
 
 "vimfiler関連
 let g:vimfiler_enable_auto_cd = 1
