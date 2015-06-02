@@ -40,14 +40,21 @@ set ruler	"カーソル位置を表示
 set autoindent	"自動でインデント
 set smartindent	"新しい行を開始したときにインデントを同じにする
 
+"特殊文字の見え方
 set list
 set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
+"全角スペースをハイライト
+augroup highlightIdegraphicSpace
+  autocmd!
+  autocmd Colorscheme * highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
+  autocmd VimEnter,WinEnter * match IdeographicSpace /　/
+augroup END
 
 "backspaceキーの挙動設定
-    "indent	行頭の空白の削除を許す
-    "eol	改行の削除を許す
-    "start	挿入モードの開始位置での削除を許す
-set backspace=indent,eol,start	
+    "indent 行頭の空白の削除を許す
+    "eol    改行の削除を許す
+    "start  挿入モードの開始位置での削除を許す
+set backspace=indent,eol,start
 
 set tabstop=4	"tab文字の画面上何文字で表示するか
 set shiftwidth=4	"自動インデントの際に挿入されるタブの幅
