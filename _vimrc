@@ -114,4 +114,4 @@ command! Todo edit ~\ToDo.txt   ":TodoでTodo.txtを編集
 "衝突しないようなキーバインドにする
 "現在マッピングされているキーバインドを調べるコマンドを調べる
 "vim-indent-guidesの色調整
-"
+"VimFilerの呼び出しオプション
