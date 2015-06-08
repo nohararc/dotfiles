@@ -85,7 +85,7 @@ set cursorline  "現在編集中の行を強調表示
 "vimfiler関連
 let g:vimfiler_enable_auto_cd = 1
 let g:vimfiler_safe_mode_by_default = 0
-nnoremap <silent> ,vf :<C-u>VimFiler<CR>
+nnoremap <silent> ,vf :<C-u>VimFiler -split -simple -winwidth=40 -no-quit<CR>
 
 "jedi-vim関連
 let g:jedi#auto_initialization = 1
