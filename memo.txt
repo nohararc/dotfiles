@@ -1,1 +1,0 @@
-http://www.yunabe.jp/docs/relearning_git_remote.html#git-pull
