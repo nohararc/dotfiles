@@ -36,9 +36,9 @@ syntax on
 
 "ここから基本設定
 set history=100 "コマンド履歴を100まで記憶
-set ruler	"カーソル位置を表示
-set autoindent	"自動でインデント
-set smartindent	"新しい行を開始したときにインデントを同じにする
+set ruler    "カーソル位置を表示
+set autoindent    "自動でインデント
+set smartindent    "新しい行を開始したときにインデントを同じにする
 
 "特殊文字の見え方
 set list
@@ -56,13 +56,13 @@ augroup END
     "start  挿入モードの開始位置での削除を許す
 set backspace=indent,eol,start
 
-set tabstop=4	"tab文字の画面上何文字で表示するか
-set shiftwidth=4	"自動インデントの際に挿入されるタブの幅
-set expandtab		"tabの代わりに空白文字を指定
+set tabstop=4       "tab文字の画面上何文字で表示するか
+set shiftwidth=4    "自動インデントの際に挿入されるタブの幅
+set expandtab       "tabの代わりに空白文字を指定
 
-set backupdir=$VIM/backup	"バックアップファイルのディレクトリ指定
-set directory=$VIM/backup	"バックアップファイルのディレクトリ指定
-set undodir=$VIM/backup   "Undoファイルのディレクトリ指定
+set backupdir=$VIM/backup   "バックアップファイルのディレクトリ指定
+set directory=$VIM/backup   "バックアップファイルのディレクトリ指定
+set undodir=$VIM/backup     "Undoファイルのディレクトリ指定
 
 set hidden      "変更中のファイルを保存なしで切り替える
 
