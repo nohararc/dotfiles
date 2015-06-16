@@ -39,6 +39,9 @@ set ruler    "カーソル位置を表示
 set autoindent    "自動でインデント
 set smartindent    "新しい行を開始したときにインデントを同じにする
 
+" デフォルトvimrc_exampleのtextwidth設定上書き、改行しない設定に
+autocmd FileType text setlocal textwidth=0
+
 "特殊文字の見え方
 set list
 set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
