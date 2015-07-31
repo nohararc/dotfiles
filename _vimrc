@@ -103,9 +103,10 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=110
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=140
 
 "unite関連
-nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
-nnoremap <silent> ,uf :<C-u>Unite neomru/file<CR>
-nnoremap <silent> ,ut :<C-u>Unite tab<CR>
+nnoremap <silent> ,ub :<C-u>Unite buffer<CR>        "現在のバッファを表示
+nnoremap <silent> ,ut :<C-u>Unite tab<CR>           "現在のタブを表示
+nnoremap <silent> ,uf :<C-u>Unite file<CR>          "カレントディレクトリを開く
+nnoremap <silent> ,un :<C-u>Unite neomru/file<CR>   "過去開いたファイルの一覧を取得
 
 "コマンド定義
 command! Todo edit ~\ToDo.txt   ":TodoでTodo.txtを編集
