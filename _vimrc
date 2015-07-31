@@ -110,6 +110,8 @@ nnoremap <silent> ,ut :<C-u>Unite tab<CR>
 "コマンド定義
 command! Todo edit ~\ToDo.txt   ":TodoでTodo.txtを編集
 
+"キーマップ変更
+nnoremap <silent> ,wv :<C-u>rightbelow vnew<CR>
 
 "Todo
 "Uniteまわりを変更する
