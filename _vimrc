@@ -1,8 +1,8 @@
 "エンコーディング
-set encoding=utf-8
-set termencoding=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8,cp932,euc-jp
+set encoding=utf-8              "vimの内部文字コードを変更
+set termencoding=utf-8          "vimのターミナルの文字コードを変更
+set fileencoding=utf-8          "ファイルの書き込み時の文字コードを変更
+set fileencodings=utf-8,cp932,euc-jp    "ファイル読み込み時の文字コードを変更
 scriptencoding utf-8
 
 "neobundle
@@ -94,6 +94,15 @@ let g:jedi#auto_initialization = 1
 let g:jedi#rename_command = ""
 let g:jedi#popup_on_dot = 1
 autocmd FileType python let b:did_ftplugin = 1
+
+"quickrun関連
+"pythonはcp932で返してくるのでそれように出力文字コードを設定
+let g:quickrun_config = {
+\   "python" : {
+\      "hook/output_encode/enable" : 1,
+\      "hook/output_encode/encoding" : "cp932",
+\   },
+\}
 
 "vim-indent-guides関連
 let g:indent_guides_enable_on_vim_startup=1 "vim起動時に有効にする
