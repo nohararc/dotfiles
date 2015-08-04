@@ -12,7 +12,7 @@ set nocompatible               "vi互換を消去
 filetype off                   " おまじない
 
 if has('vim_starting')
-  set runtimepath+=$VIM\bundle\neobundle.vim
+ set runtimepath+=$VIM\bundle\neobundle.vim
 endif
 
 call neobundle#begin(expand('$VIM\bundle'))
@@ -106,10 +106,11 @@ let g:quickrun_config = {
 
 "vim-indent-guides関連
 let g:indent_guides_enable_on_vim_startup=1 "vim起動時に有効にする
-let g:indent_guides_guide_size=1
-let g:indent_guides_auto_colors=0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=110
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=140
+let g:indent_guides_start_level=2           "ガイドを開始するタブの数
+let g:indent_guides_guide_size=1            "ガイドのサイズ
+"indentに付ける色(なぜかIndentGuidesOdd[Even] ctermbgでは色が変わらない)
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#444433 ctermbg=black     "奇数
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#333344 ctermbg=darkgray  "偶数
 
 "unite関連
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>        "現在のバッファを表示
