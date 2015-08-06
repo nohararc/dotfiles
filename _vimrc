@@ -21,7 +21,6 @@ NeoBundleFetch 'Shogo/neobundle.vim'
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'davidhalter/jedi-vim'
@@ -80,9 +79,6 @@ set showmatch   "閉じ括弧が入力されたときに対応する括弧を強
 set matchtime=1 "対応する括弧を強調する時間(0.x秒単位)
 set textwidth=0 "自動改行無効
 set cursorline  "現在編集中の行を強調表示
-
-"vimshell関連
-"let g:vimshell_prompt_expr = 'getcwd()." > "'   "カレントディレクトリを表示
 
 "vimfiler関連
 let g:vimfiler_enable_auto_cd = 1
