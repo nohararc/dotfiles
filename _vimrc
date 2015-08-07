@@ -120,6 +120,7 @@ command! Todo edit ~\ToDo.txt   ":TodoでTodo.txtを編集
 "キーマップ変更
 nnoremap <silent> ,wv :<C-u>rightbelow vnew<CR>
 nnoremap <silent> ,wc :<C-u>close<CR>
+nnoremap Y y$
 
 "Todo
 "Uniteまわりを変更する
