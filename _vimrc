@@ -37,6 +37,7 @@ set history=100 "コマンド履歴を100まで記憶
 set ruler    "カーソル位置を表示
 set autoindent    "自動でインデント
 set smartindent    "新しい行を開始したときにインデントを同じにする
+set number      "行番号を表示
 
 " デフォルトvimrc_exampleのtextwidth設定上書き、改行しない設定に
 autocmd FileType text setlocal textwidth=0
