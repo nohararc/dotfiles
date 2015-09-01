@@ -39,8 +39,8 @@ set autoindent    "自動でインデント
 set smartindent    "新しい行を開始したときにインデントを同じにする
 set number      "行番号を表示
 
-" デフォルトvimrc_exampleのtextwidth設定上書き、改行しない設定に
-autocmd FileType text setlocal textwidth=0
+autocmd FileType text setlocal textwidth=0      " デフォルトvimrc_exampleのtextwidth設定上書き、改行しない設定に
+autocmd BufWinEnter ToDo.txt silent loadview    "ToDo.txtを開くとき折り畳みを復元 保存はmkviewで行う
 
 "特殊文字の見え方
 set list
