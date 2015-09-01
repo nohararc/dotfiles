@@ -112,6 +112,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#333344 ctermbg=darkgr
 "unite関連
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>        "現在のバッファを表示
 nnoremap <silent> ,ut :<C-u>Unite tab<CR>           "現在のタブを表示
+nnoremap <silent> ,ur :<C-u>Unite register<CR>      "レジスタを表示
 nnoremap <silent> ,uf :<C-u>Unite file<CR>          "カレントディレクトリを開く
 nnoremap <silent> ,un :<C-u>Unite neomru/file<CR>   "過去開いたファイルの一覧を取得
 
