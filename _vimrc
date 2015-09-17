@@ -124,4 +124,3 @@ nnoremap <silent> ,wc :<C-u>close<CR>
 nnoremap Y y$
 
 "Todo
-"Uniteまわりを変更する
