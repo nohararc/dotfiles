@@ -109,18 +109,21 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#444433 ctermbg=black 
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#333344 ctermbg=darkgray  "偶数
 
 "unite関連
-nnoremap <silent> ,ub :<C-u>Unite buffer<CR>        "現在のバッファを表示
-nnoremap <silent> ,ut :<C-u>Unite tab<CR>           "現在のタブを表示
-nnoremap <silent> ,ur :<C-u>Unite register<CR>      "レジスタを表示
-nnoremap <silent> ,uf :<C-u>Unite file<CR>          "カレントディレクトリを開く
-nnoremap <silent> ,un :<C-u>Unite neomru/file<CR>   "過去開いたファイルの一覧を取得
-
-"コマンド定義
-command! Todo edit ~\ToDo.txt   ":TodoでTodo.txtを編集
+nnoremap [unite] <Nop>
+nmap <Space>u [unite]
+nnoremap <silent> [unite]b :<C-u>Unite buffer<CR>        "現在のバッファを表示
+nnoremap <silent> [unite]t :<C-u>Unite tab<CR>           "現在のタブを表示
+nnoremap <silent> [unite]r :<C-u>Unite register<CR>      "レジスタを表示
+nnoremap <silent> [unite]d :<C-u>Unite file<CR>          "カレントディレクトリを開く
+nnoremap <silent> [unite]f :<C-u>Unite neomru/file<CR>   "過去開いたファイルの一覧を取得
 
 "キーマップ変更
-nnoremap <silent> ,wv :<C-u>rightbelow vnew<CR>
-nnoremap <silent> ,wc :<C-u>close<CR>
+nnoremap <silent> <Space>wv :<C-u>rightbelow vnew<CR>   "ウィンドウを右に作る
+nnoremap <Space>l $
+nnoremap <Space>m %
+nnoremap <Space>ww <C-w><C-w>
+nnoremap <Space>wh <C-w>h
+nnoremap <Space>wl <C-w>l
+nnoremap <Space>wj <C-w>j
+nnoremap <Space>wk <C-w>k
 nnoremap Y y$
-
-"Todo
