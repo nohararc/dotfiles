@@ -126,4 +126,10 @@ nnoremap <Space>wh <C-w>h
 nnoremap <Space>wl <C-w>l
 nnoremap <Space>wj <C-w>j
 nnoremap <Space>wk <C-w>k
+nnoremap <Space>wH <C-w>H
+nnoremap <Space>wL <C-w>L
+nnoremap <Space>wJ <C-w>J
+nnoremap <Space>wK <C-w>K
 nnoremap Y y$
+
+inoremap <silent> jj <ESC>
