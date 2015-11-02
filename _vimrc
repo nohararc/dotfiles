@@ -83,7 +83,7 @@ set cursorline  "現在編集中の行を強調表示
 "vimfiler関連
 let g:vimfiler_enable_auto_cd = 1
 let g:vimfiler_safe_mode_by_default = 0
-nnoremap <silent> ,vf :<C-u>VimFiler -split -simple -winwidth=40 -no-quit<CR>
+nnoremap <silent> <Space>vf :<C-u>VimFiler -split -simple -winwidth=40 -no-quit<CR>
 
 "jedi-vim関連
 let g:jedi#auto_initialization = 1
@@ -119,6 +119,7 @@ nnoremap <silent> [unite]f :<C-u>Unite neomru/file<CR>   "過去開いたファ�
 
 "キーマップ変更
 nnoremap <silent> <Space>wv :<C-u>rightbelow vnew<CR>   "ウィンドウを右に作る
+nnoremap <Space>h ^
 nnoremap <Space>l $
 nnoremap <Space>m %
 nnoremap <Space>ww <C-w><C-w>
@@ -130,6 +131,7 @@ nnoremap <Space>wH <C-w>H
 nnoremap <Space>wL <C-w>L
 nnoremap <Space>wJ <C-w>J
 nnoremap <Space>wK <C-w>K
+nnoremap <Space>w- <C-w>=
 nnoremap Y y$
 
 inoremap <silent> jj <ESC>
