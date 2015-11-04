@@ -25,6 +25,9 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'cocopon/lightline-hybrid.vim'
 
 NeoBundleCheck
 call neobundle#end()
@@ -116,6 +119,12 @@ nnoremap <silent> [unite]t :<C-u>Unite tab<CR>           "現在のタブを表�
 nnoremap <silent> [unite]r :<C-u>Unite register<CR>      "レジスタを表示
 nnoremap <silent> [unite]d :<C-u>Unite file<CR>          "カレントディレクトリを開く
 nnoremap <silent> [unite]f :<C-u>Unite neomru/file<CR>   "過去開いたファイルの一覧を取得
+
+
+"lightline関連
+let g:lightline = {
+    \ 'colorscheme': 'hybrid',
+    \ }
 
 "キーマップ変更
 nnoremap <silent> <Space>wv :<C-u>rightbelow vnew<CR>   "ウィンドウを右に作る
