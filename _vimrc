@@ -5,7 +5,7 @@ set fileencoding=utf-8          "ファイルの書き込み時の文字コー�
 set fileencodings=utf-8,cp932,euc-jp    "ファイル読み込み時の文字コードを変更
 scriptencoding utf-8
 
-"neobundle
+"NeoBundle関連
 "NeoBundle本体を$VIM\bundle配下に配置
 "winの場合はGitコマンドへのパスを通さないとインストールされないので注意(再起動後に反映)
 set nocompatible               "vi互換を消去
@@ -28,6 +28,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'cocopon/lightline-hybrid.vim'
+NeoBundle 'Align'
 
 NeoBundleCheck
 call neobundle#end()
@@ -125,6 +126,9 @@ nnoremap <silent> [unite]f :<C-u>Unite neomru/file<CR>   "過去開いたファ�
 let g:lightline = {
     \ 'colorscheme': 'hybrid',
     \ }
+
+"Align関連
+let g:Align_xstrlen = 3
 
 "キーマップ変更
 nnoremap <silent> <Space>wv :<C-u>rightbelow vnew<CR>   "ウィンドウを右に作る
