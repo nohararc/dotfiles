@@ -146,5 +146,3 @@ nnoremap <Space>wJ <C-w>J
 nnoremap <Space>wK <C-w>K
 nnoremap <Space>w- <C-w>=
 nnoremap Y y$
-
-inoremap <silent> jj <ESC>
