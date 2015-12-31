@@ -55,6 +55,8 @@ augroup highlightIdegraphicSpace
   autocmd VimEnter,WinEnter * match IdeographicSpace /　/
 augroup END
 
+colorscheme hybrid
+
 "backspaceキーの挙動設定
     "indent 行頭の空白の削除を許す
     "eol    改行の削除を許す
