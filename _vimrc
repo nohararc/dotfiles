@@ -42,6 +42,8 @@ set ruler    "カーソル位置を表示
 set autoindent    "自動でインデント
 set smartindent    "新しい行を開始したときにインデントを同じにする
 set number      "行番号を表示
+set laststatus=2    "常にステータス行を表示
+set cmdheight=1     "コマンドラインの高さ
 
 autocmd FileType text setlocal textwidth=0      " デフォルトvimrc_exampleのtextwidth設定上書き、改行しない設定に
 
