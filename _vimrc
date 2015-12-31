@@ -6,16 +6,16 @@ set fileencodings=utf-8,cp932,euc-jp    "ファイル読み込み時の文字コ
 scriptencoding utf-8
 
 "NeoBundle関連
-"NeoBundle本体を$VIM\bundle配下に配置
+"NeoBundle本体を$VIM/bundle配下に配置
 "winの場合はGitコマンドへのパスを通さないとインストールされないので注意(再起動後に反映)
 set nocompatible               "vi互換を消去
 filetype off                   " おまじない
 
 if has('vim_starting')
- set runtimepath+=$VIM\bundle\neobundle.vim
+ set runtimepath+=$VIM/bundle/neobundle.vim
 endif
 
-call neobundle#begin(expand('$VIM\bundle'))
+call neobundle#begin(expand('$VIM/bundle'))
 NeoBundleFetch 'Shogo/neobundle.vim'
 "ここからプラグイン名を書いていく
 NeoBundle 'Shougo/neobundle.vim'
