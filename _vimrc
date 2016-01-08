@@ -112,7 +112,7 @@ let g:quickrun_config = {
 let g:indent_guides_enable_on_vim_startup=1 "vim起動時に有効にする
 let g:indent_guides_start_level=2           "ガイドを開始するタブの数
 let g:indent_guides_guide_size=1            "ガイドのサイズ
-"indentに付ける色(なぜかIndentGuidesOdd[Even] ctermbgでは色が変わらない)
+"indentに付ける色
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#444433 ctermbg=black     "奇数
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#333344 ctermbg=darkgray  "偶数
 
