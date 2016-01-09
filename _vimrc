@@ -41,7 +41,7 @@ set history=100 "コマンド履歴を100まで記憶
 set ruler    "カーソル位置を表示
 set autoindent    "自動でインデント
 set smartindent    "新しい行を開始したときにインデントを同じにする
-set number      "行番号を表示
+set nonumber      "行番号を非表示
 set laststatus=2    "常にステータス行を表示
 set cmdheight=1     "コマンドラインの高さ
 
@@ -57,7 +57,7 @@ augroup highlightIdegraphicSpace
   autocmd VimEnter,WinEnter * match IdeographicSpace /　/
 augroup END
 
-colorscheme hybrid
+colorscheme desert
 
 "backspaceキーの挙動設定
     "indent 行頭の空白の削除を許す
@@ -102,6 +102,9 @@ autocmd FileType python let b:did_ftplugin = 1
 "quickrun関連
 "pythonはcp932で返してくるのでそれように出力文字コードを設定
 let g:quickrun_config = {
+\   "_" : {
+\       "outputter/buffer/split": ":botright 8sp"
+\   },
 \   "python" : {
 \      "hook/output_encode/enable" : 1,
 \      "hook/output_encode/encoding" : "cp932",
