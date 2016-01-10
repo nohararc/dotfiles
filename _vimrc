@@ -28,7 +28,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'cocopon/lightline-hybrid.vim'
-NeoBundle 'Align'
+NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'junegunn/seoul256.vim'
 
 NeoBundleCheck
@@ -58,7 +58,7 @@ augroup highlightIdegraphicSpace
   autocmd VimEnter,WinEnter * match IdeographicSpace /　/
 augroup END
 
-colorscheme desert
+colorscheme seoul256
 
 "backspaceキーの挙動設定
     "indent 行頭の空白の削除を許す
