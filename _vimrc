@@ -29,6 +29,7 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'cocopon/lightline-hybrid.vim'
 NeoBundle 'Align'
+NeoBundle 'junegunn/seoul256.vim'
 
 NeoBundleCheck
 call neobundle#end()
