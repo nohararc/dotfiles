@@ -45,6 +45,7 @@ set smartindent    "新しい行を開始したときにインデントを同じ
 set nonumber      "行番号を非表示
 set laststatus=2    "常にステータス行を表示
 set cmdheight=1     "コマンドラインの高さ
+set foldcolumn=1    "左余白を確保
 
 autocmd FileType text setlocal textwidth=0      " デフォルトvimrc_exampleのtextwidth設定上書き、改行しない設定に
 
