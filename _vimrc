@@ -30,6 +30,7 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'cocopon/lightline-hybrid.vim'
 NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'junegunn/seoul256.vim'
+NeoBundle 'tpope/vim-surround'
 
 NeoBundleCheck
 call neobundle#end()
@@ -136,8 +137,8 @@ let g:lightline = {
     \ 'colorscheme': 'hybrid',
     \ }
 
-"Align関連
-let g:Align_xstrlen = 3
+"vim-alignta関連
+let g:alignta_default_arguments = "|"
 
 "キーマップ変更
 nnoremap <silent> <Space>wv :<C-u>rightbelow vnew<CR>   "ウィンドウを右に作る
