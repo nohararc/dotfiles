@@ -1,1 +1,6 @@
 colorscheme seoul256
+
+" IME ON時のカーソルの色を設定
+if has('multi_byte_ime')
+  highlight CursorIM guibg=Blue guifg=NONE
+endif
