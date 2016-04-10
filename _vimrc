@@ -5,38 +5,24 @@ set fileencoding=utf-8          "ファイルの書き込み時の文字コー�
 set fileencodings=utf-8,cp932,euc-jp    "ファイル読み込み時の文字コードを変更
 scriptencoding utf-8
 
-"NeoBundle関連
-"NeoBundle本体を$VIM/bundle配下に配置
-"winの場合はGitコマンドへのパスを通さないとインストールされないので注意(再起動後に反映)
-set nocompatible               "vi互換を消去
-filetype off                   " おまじない
+"vim-plug
+call plug#begin('$VIM/plugged')
+Plug 'junegunn/vim-plug'
+Plug 'Shougo/neobundle.vim'
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/neomru.vim'
+Plug 'thinca/vim-quickrun'
+Plug 'Shougo/vimfiler.vim'
+Plug 'davidhalter/jedi-vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'itchyny/lightline.vim'
+Plug 'w0ng/vim-hybrid'
+Plug 'cocopon/lightline-hybrid.vim'
+Plug 'h1mesuke/vim-alignta'
+Plug 'junegunn/seoul256.vim'
+Plug 'tpope/vim-surround'
+call plug#end()
 
-if has('vim_starting')
- set runtimepath+=$VIM/bundle/neobundle.vim
-endif
-
-call neobundle#begin(expand('$VIM/bundle'))
-NeoBundleFetch 'Shogo/neobundle.vim'
-"ここからプラグイン名を書いていく
-NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'Shougo/vimfiler.vim'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'cocopon/lightline-hybrid.vim'
-NeoBundle 'h1mesuke/vim-alignta'
-NeoBundle 'junegunn/seoul256.vim'
-NeoBundle 'tpope/vim-surround'
-
-NeoBundleCheck
-call neobundle#end()
-
-filetype plugin indent on     "おまじない
-syntax on
 
 "ここから基本設定
 set history=100 "コマンド履歴を100まで記憶
