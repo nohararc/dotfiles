@@ -21,6 +21,7 @@ Plug 'cocopon/lightline-hybrid.vim'
 Plug 'h1mesuke/vim-alignta'
 Plug 'junegunn/seoul256.vim'
 Plug 'tpope/vim-surround'
+Plug 'PProvost/vim-ps1'
 call plug#end()
 
 
