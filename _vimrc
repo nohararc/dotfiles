@@ -8,7 +8,6 @@ scriptencoding utf-8
 "vim-plug
 call plug#begin('$VIM/plugged')
 Plug 'junegunn/vim-plug'
-Plug 'Shougo/neobundle.vim'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
 Plug 'thinca/vim-quickrun'
