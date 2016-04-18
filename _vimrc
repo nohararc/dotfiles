@@ -95,8 +95,11 @@ let g:quickrun_config = {
 \       "outputter/buffer/split": ":botright 8sp"
 \   },
 \   "python" : {
-\      "hook/output_encode/enable" : 1,
-\      "hook/output_encode/encoding" : "cp932",
+\       "hook/output_encode/enable" : 1,
+\       "hook/output_encode/encoding" : "cp932",
+\   },
+\   "tcl" : {
+\       "command" : "tclsh"
 \   },
 \}
 
