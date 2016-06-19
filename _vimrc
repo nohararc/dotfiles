@@ -12,7 +12,7 @@ Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'Shougo/vimfiler.vim'
-Plug 'davidhalter/jedi-vim'
+"Plug 'davidhalter/jedi-vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'itchyny/lightline.vim'
 Plug 'w0ng/vim-hybrid'
@@ -83,16 +83,21 @@ let g:vimfiler_safe_mode_by_default = 0
 nnoremap <silent> <Space>vf :<C-u>VimFiler -split -simple -winwidth=40 -no-quit<CR>
 
 "jedi-vim関連
-let g:jedi#auto_initialization = 1
-let g:jedi#rename_command = ""
-let g:jedi#popup_on_dot = 1
-autocmd FileType python let b:did_ftplugin = 1
+"let g:jedi#auto_initialization = 1
+"let g:jedi#rename_command = ""
+"let g:jedi#popup_on_dot = 0
+"let g:jedi#completions_command = "<C-Space>"
+"autocmd FileType python let b:did_ftplugin = 1
 
 "quickrun関連
 "pythonはcp932で返してくるのでそれように出力文字コードを設定
 let g:quickrun_config = {
 \   "_" : {
-\       "outputter/buffer/split": ":botright 8sp"
+\       'runner'    : 'vimproc',
+\       'runner/vimproc/updatetime' : 60,
+\       'outputter' : 'error',
+\       "outputter/buffer/split": ":botright 8sp",
+\       'outputter/buffer/close_on_empty' : 1,
 \   },
 \   "python" : {
 \       "hook/output_encode/enable" : 1,
