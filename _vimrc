@@ -6,7 +6,7 @@ set fileencodings=utf-8,cp932,euc-jp    "ファイル読み込み時の文字コ
 scriptencoding utf-8
 
 "vim-plug
-call plug#begin('$VIM/plugged')
+call plug#begin('$VIM/plugins/vim-plug')
 Plug 'junegunn/vim-plug'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
