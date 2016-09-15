@@ -8,11 +8,8 @@ scriptencoding utf-8
 "vim-plug
 call plug#begin('$VIM/plugged')
 Plug 'junegunn/vim-plug'
-Plug 'Shougo/unite.vim'
-Plug 'Shougo/neomru.vim'
 Plug 'thinca/vim-quickrun'
-Plug 'Shougo/vimfiler.vim'
-"Plug 'davidhalter/jedi-vim'
+Plug 'hynek/vim-python-pep8-indent'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'itchyny/lightline.vim'
 Plug 'w0ng/vim-hybrid'
@@ -21,6 +18,7 @@ Plug 'h1mesuke/vim-alignta'
 Plug 'junegunn/seoul256.vim'
 Plug 'tpope/vim-surround'
 Plug 'PProvost/vim-ps1'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 
@@ -77,18 +75,6 @@ set matchtime=1 "対応する括弧を強調する時間(0.x秒単位)
 set textwidth=0 "自動改行無効
 set cursorline  "現在編集中の行を強調表示
 
-"vimfiler関連
-let g:vimfiler_enable_auto_cd = 1
-let g:vimfiler_safe_mode_by_default = 0
-nnoremap <silent> <Space>vf :<C-u>VimFiler -split -simple -winwidth=40 -no-quit<CR>
-
-"jedi-vim関連
-"let g:jedi#auto_initialization = 1
-"let g:jedi#rename_command = ""
-"let g:jedi#popup_on_dot = 0
-"let g:jedi#completions_command = "<C-Space>"
-"autocmd FileType python let b:did_ftplugin = 1
-
 "quickrun関連
 "pythonはcp932で返してくるのでそれように出力文字コードを設定
 let g:quickrun_config = {
@@ -114,16 +100,6 @@ let g:indent_guides_guide_size=1            "ガイドのサイズ
 "indentに付ける色
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#444433 ctermbg=black     "奇数
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#333344 ctermbg=darkgray  "偶数
-
-"unite関連
-nnoremap [unite] <Nop>
-nmap <Space>u [unite]
-nnoremap <silent> [unite]b :<C-u>Unite buffer<CR>        "現在のバッファを表示
-nnoremap <silent> [unite]t :<C-u>Unite tab<CR>           "現在のタブを表示
-nnoremap <silent> [unite]r :<C-u>Unite register<CR>      "レジスタを表示
-nnoremap <silent> [unite]d :<C-u>Unite file<CR>          "カレントディレクトリを開く
-nnoremap <silent> [unite]f :<C-u>Unite neomru/file<CR>   "過去開いたファイルの一覧を取得
-
 
 "lightline関連
 let g:lightline = {
