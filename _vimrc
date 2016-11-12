@@ -9,7 +9,7 @@ scriptencoding utf-8
 call plug#begin('$VIM/plugins/vim-plug')
 Plug 'junegunn/vim-plug'
 Plug 'thinca/vim-quickrun'
-Plug 'hynek/vim-python-pep8-indent'
+Plug 'davidhalter/jedi-vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'itchyny/lightline.vim'
 Plug 'w0ng/vim-hybrid'
@@ -31,8 +31,6 @@ set nonumber      "行番号を非表示
 set laststatus=2    "常にステータス行を表示
 set cmdheight=1     "コマンドラインの高さ
 set foldcolumn=1    "左余白を確保
-
-autocmd FileType text setlocal textwidth=0      " デフォルトvimrc_exampleのtextwidth設定上書き、改行しない設定に
 
 "特殊文字の見え方
 set list
@@ -74,6 +72,13 @@ set showmatch   "閉じ括弧が入力されたときに対応する括弧を強
 set matchtime=1 "対応する括弧を強調する時間(0.x秒単位)
 set textwidth=0 "自動改行無効
 set cursorline  "現在編集中の行を強調表示
+
+"jedi-vim関連
+let g:jedi#auto_initialization = 1
+let g:jedi#rename_command = ""
+let g:jedi#popup_on_dot = 0
+let g:jedi#completions_command = "<C-Space>"
+autocmd FileType python let b:did_ftplugin = 1
 
 "quickrun関連
 "pythonはcp932で返してくるのでそれように出力文字コードを設定
