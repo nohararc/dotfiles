@@ -19,6 +19,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'tpope/vim-surround'
 Plug 'PProvost/vim-ps1'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'thinca/vim-fontzoom'
 call plug#end()
 
 
@@ -112,6 +113,10 @@ let g:lightline = {
 
 "vim-alignta関連
 let g:alignta_default_arguments = "|"
+
+"ctrlpvim関連
+nnoremap <silent> <Space>pm :<C-u>CtrlPMixed<CR>
+nnoremap <silent> <Space>pb :<C-u>CtrlPBuffer<CR>
 
 "キーマップ変更
 nnoremap <silent> <Space>wv :<C-u>rightbelow vnew<CR>   "ウィンドウを右に作る
