@@ -9,7 +9,7 @@ scriptencoding utf-8
 call plug#begin('$VIM/plugins/vim-plug')
 Plug 'junegunn/vim-plug'
 Plug 'thinca/vim-quickrun'
-Plug 'davidhalter/jedi-vim'
+"Plug 'davidhalter/jedi-vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'itchyny/lightline.vim'
 Plug 'w0ng/vim-hybrid'
@@ -122,6 +122,7 @@ let g:alignta_default_arguments = "|"
 "ctrlpvim関連
 nnoremap <silent> <Space>pm :<C-u>CtrlPMixed<CR>
 nnoremap <silent> <Space>pb :<C-u>CtrlPBuffer<CR>
+nnoremap <silent> <Space>pf :<C-u>CtrlPCurFile<CR>
 
 "キーマップ変更
 nnoremap <silent> <Space>wv :<C-u>rightbelow vnew<CR>   "ウィンドウを右に作る
