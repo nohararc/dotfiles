@@ -20,6 +20,7 @@ Plug 'tpope/vim-surround'
 Plug 'PProvost/vim-ps1'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'thinca/vim-fontzoom'
+Plug 'tomasr/molokai'
 call plug#end()
 
 
