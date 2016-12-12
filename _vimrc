@@ -21,6 +21,7 @@ Plug 'PProvost/vim-ps1'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'thinca/vim-fontzoom'
 Plug 'KKPMW/moonshine-vim'
+Plug 'tomasr/molokai'
 call plug#end()
 
 
