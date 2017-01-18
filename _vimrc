@@ -45,7 +45,7 @@ augroup highlightIdegraphicSpace
   autocmd VimEnter,WinEnter * match IdeographicSpace /　/
 augroup END
 
-colorscheme seoul256
+colorscheme molokai
 
 "backspaceキーの挙動設定
     "indent 行頭の空白の削除を許す
@@ -122,7 +122,7 @@ let g:lightline = {
 let g:alignta_default_arguments = "|"
 
 "ctrlpvim関連
-nnoremap <silent> <Space>pm :<C-u>CtrlPMixed<CR>
+nnoremap <silent> <Space>pm :<C-u>CtrlPMRUFiles<CR>
 nnoremap <silent> <Space>pb :<C-u>CtrlPBuffer<CR>
 nnoremap <silent> <Space>pf :<C-u>CtrlPCurFile<CR>
 
