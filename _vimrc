@@ -2,7 +2,7 @@
 set encoding=utf-8              "vimの内部文字コードを変更
 set termencoding=utf-8          "vimのターミナルの文字コードを変更
 set fileencoding=utf-8          "ファイルの書き込み時の文字コードを変更
-set fileencodings=utf-8,cp932,euc-jp    "ファイル読み込み時の文字コードを変更
+set fileencodings=utf-8,cp932,euc-jp,iso-2022-jp    "ファイル読み込み時の文字コードを変更
 scriptencoding utf-8
 
 "vim-plug
@@ -22,6 +22,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'thinca/vim-fontzoom'
 Plug 'KKPMW/moonshine-vim'
 Plug 'tomasr/molokai'
+Plug 'othree/yajs.vim'
 call plug#end()
 
 
