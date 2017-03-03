@@ -143,3 +143,5 @@ nnoremap <Space>wJ <C-w>J
 nnoremap <Space>wK <C-w>K
 nnoremap <Space>w- <C-w>=
 nnoremap Y y$
+
+nnoremap <silent> <Space>e :<C-u>silent! !explorer %:h<CR>
