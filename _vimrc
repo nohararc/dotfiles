@@ -126,6 +126,7 @@ let g:alignta_default_arguments = "|"
 nnoremap <silent> <Space>pm :<C-u>CtrlPMRUFiles<CR>
 nnoremap <silent> <Space>pb :<C-u>CtrlPBuffer<CR>
 nnoremap <silent> <Space>pf :<C-u>CtrlPCurFile<CR>
+nnoremap <silent> <Space>pl :<C-u>CtrlPLine<CR>
 
 "キーマップ変更
 nnoremap <silent> <Space>wv :<C-u>rightbelow vnew<CR>   "ウィンドウを右に作る
